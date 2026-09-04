@@ -1,50 +1,67 @@
 <!DOCTYPE html> <!-- el navegador lee el html -->
-<html lang="es"> 
+<html lang="es">
+
 <head>
     <meta charset="UTF-8"> <!-- configuracion de caracteres -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- adaptacion del viewport al ancho del dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- adaptacion del viewport al ancho del dispositivo -->
     <title>Es una copa de lo mejor</title>
 </head>
+
 <body> <!-- Contenido de la pagina --> <!-- Cuerpo del codigo -->
     <!-- SEO: Search Engine Optimization -->
-<!-- Encabezados (heading):  
+    <!-- Encabezados (heading):  
         h1 ... h6
         la diferencia entre cada uno es la jerarquia h1 tiene mas jerarquia que el h2 -->
+    <header> <!-- Define la cabecera de una pagina web -->
+        <nav class="navbar"> <!-- Lista simple de navegación -->
+            <div class="logo">MiSitio</div>
+            <ul class="nav-links"> <!-- Lista desordenada -->
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Ubicacion</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1>Es una copa de lo mejor</h1> <!-- Titiulo de la pagina -->
-    <p>Este es el bar que vas a tomar los mejores tragos, escuchar la mejor musica y tambien pasarla muy bien con tus amigos</p> <!-- Parrafo -->
+    <p>Este es el bar que vas a tomar los mejores tragos, escuchar la mejor musica y tambien pasarla muy bien con tus
+        amigos</p> <!-- Parrafo -->
     <h2>Los tragos que tenemos en la carta son</h2> <!-- Subtitulo -->
-    <ul> <!-- Lista desordenada -->
-        <li>Fernet
-            <ul>
-                <li>Coca Cola</li>
-                <li>Branca</li>
-            </ul>
-        </li>
-        <li>Vodka con jugo
-            <ul>
-                <li>Smirnoff</li>
-                <li>Baggio de Naranja</li>
-            </ul>
-        </li>
-        <li>Daikiri de Frutilla
-            <ul>
-                <li>Smirnoff</li>
-                <li>Frutilla exprimida</li>
-            </ul>
-        </li>
-        <li>Caipirinha
-            <ul>
-                <li>Cachaça</li>
-                <li>Lima</li>
-                <li>Azucar</li>
-                <li>Hielo</li>
-            </ul>
-        </li>
-    </ul>
-    <div>
+    <div> <!-- Division de nuestra pagina -->
+        <ul> <!-- Lista desordenada -->
+            <li>Fernet <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0GSj8WKDM9rSxDo4rZ5Y73vbjIUCWRcFC_efd1T31mg&amp;s=10">
+                <ul>
+                    <li>Coca Cola</li>
+                    <li>Branca</li>
+                </ul>
+            </li>
+            <li>Vodka con jugo <img src="./img/images (4).jfif" alt="">
+                <ul>
+                    <li>Smirnoff</li>
+                    <li>Baggio de Naranja</li>
+                </ul>
+            </li>
+            <li>Daikiri de Frutilla
+                <ul>
+                    <li>Smirnoff</li>
+                    <li>Frutilla exprimida</li>
+                </ul>
+            </li>
+            <li>Caipirinha
+                <ul>
+                    <li>Cachaça</li>
+                    <li>Lima</li>
+                    <li>Azucar</li>
+                    <li>Hielo</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <section> <!-- sección temática de la web -->
         <div>
             <h4><b>Nosotros</b></h4>
-             <p>Somos una empresa familiar dedicada a la cocteleria</p>
+            <p>Somos una empresa familiar dedicada a la cocteleria</p>
         </div>
         <div>
             <h4><b>Ubicacion</b></h4>
@@ -52,13 +69,15 @@
         </div>
         <div>
             <h4><b>Contacto</b></h4>
-             <p>1151130150</p>
+            <p>1151130150</p>
         </div>
-    </div>
-    <a href="./fernet.html">Como hacer un fernet</a>
-    <a href="https://www.youtube.com/watch?v=EMQ595IY4HE">Como hacer un fernet</a> <!-- Ancla que te lleva a un link de youtube -->
-    <a href="./fernet.html">Como hacer un fernet (Resumen)</a> <!-- Ancla que te lleva al archivo fernet -->
-    <h3 id="sorteo">Paso a paso para participar en el sorteo</h3> <!-- Ancla -->
+    </section>
+    <a href="./fernet.html">Como hacer un fernet</a> <br>
+    <a href="https://www.youtube.com/watch?v=EMQ595IY4HE">Como hacer un fernet</a> <br>
+    <!-- Ancla que te lleva a un link de youtube -->
+    <a href="./fernet.html">Como hacer un fernet (Resumen)</a> <br> <!-- Ancla que te lleva al archivo fernet -->
+    <h3 id="sorteo">Paso a paso para participar en el sorteo</h3> <br> <!-- Ancla -->
     <a href="#sorteo">Ir al sorteo</a> <!-- Ancla que te lleva a participar del sorteo-->
 </body>
+
 </html>
