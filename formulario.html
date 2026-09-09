@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Registro de usuario</h1>
+    <form>
+        <div>
+            <label for="fullname">Nombre completo</label>
+            <!-- Es una descripcion para el usuario de que se espera recibir en este campo -->
+            <input type="text" id="fullname" name="fullname" required maxlength="30" minlength="10">
+            <!-- Es la etiquera que usamos para el usuario pueda ingresar -->
+        </div>
+        <!-- type: Tipo de control de formulario  -->
+        <!--maxlenght: Longitud máxima (en número de caracteres) de value -->
+        <!-- minlegth: Longitud mínima (en número de caracteres) de value -->
+        <!-- plaseholder:Texto que aparece en el control de formulario cuando no tiene ningún valor establecido  -->
+        <!-- required: requiere un valor o que el elemento esté marcado para poder enviar el formulario  -->
+        <div>
+            <label for="Email">Email</label>
+            <input type="email" required id="email" name="email" />
+        </div>
+        <div>
+            <label for="telefono">Numero de Telefono</label>
+            <input type="number" required id="telefono" maxlength="10">
+        </div>
+        <div>
+            <label for="DNI">DNI</label>
+            <input type="number" required id="DNI" maxlength="8" minlength="1">
+        </div>
+        <div>
+            <label for="genero">Seleccione su genero</label>
+            <select name="genero" id="genero">
+                <option value="MASC">Masculino</option>
+                <option value="FEM">Femenino</option>
+                <option value="X">No binario</option>
+            </select>
+
+        </div>
+        <div>
+            <label for="pais">Seleccione su pais de origen</label>
+            <select name="pais" id="pais">
+                <option value="AR">Argentina</option>
+                <option value="BR">Brasil</option>
+                <option value="EN">Ingles</option>
+                <option value="NO">No disponible</option>
+            </select>
+        </div>
+        <!--Email: campo para editar una dirección de correo electrónico. Se ve como un input de text, pero incluye parámetros de validación y muestra el teclado correspondiente en los navegadores y dispositivos compatibles con teclados dinámicos.  -->
+        <div>
+            <label for="provincia">Provincia</label>
+            <input type="text" id="provincia" name="provincia" required>
+        </div>
+        <div>
+            <label for="calle">Calle</label>
+            <input type="text" id="calle" name="calle" required>
+        </div>
+        <div>
+            <label for="domicilio">Domicilio</label>
+            <input type="number" id="domicilio" name="domicilio" minlength="1" maxlength="30000" required>
+        </div>
+        <!--Password: Campo de texto de una sola línea cuyo valor se oculta. Alerta al usuario si el sitio no es seguro. -->
+        <div>
+            <span>Seleccione su Lenguaje de programacion favorito</span>
+            <div>
+                <label for="HTML">HTML</label>
+                <input type="radio" name="lenguaje_favorito" id="HTML">
+            </div>
+            <div>
+                <label for="CSS">CSS</label>
+                <input type="radio" name="lenguaje_favorito" id="CSS">
+            </div>
+            <div>
+                <label for="JS">JS</label>
+                <input type="radio" name="lenguaje_favorito" id="JS">
+            </div>
+            <!--para que se pueda seleccionar una opcion en vez de todas las opciones, es fundamental que la clase "name" tenga el mismo valor en las 3 opciones  -->
+            <!--el input botón de radio permite seleccionar un único valor entre varias opciones con el mismo valor name  -->
+        </div>
+
+        <div>
+            <label for="comentario">Dejanos algun comentario</label>
+            <textarea name="comentario" id="comentario" rows="" cols="100">
+        </textarea>
+
+        </div>
+
+        <button type="submit">Registrarse</button>
+    </form>
+</body>
+
+</html>
