@@ -1,83 +1,97 @@
-<!DOCTYPE html> <!-- el navegador lee el html -->
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8"> <!-- configuracion de caracteres -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- adaptacion del viewport al ancho del dispositivo -->
-    <title>Es una copa de lo mejor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Formulario</title>
 </head>
 
-<body> <!-- Contenido de la pagina --> <!-- Cuerpo del codigo -->
-    <!-- SEO: Search Engine Optimization -->
-    <!-- Encabezados (heading):  
-        h1 ... h6
-        la diferencia entre cada uno es la jerarquia h1 tiene mas jerarquia que el h2 -->
-    <header> <!-- Define la cabecera de una pagina web -->
-        <nav class="navbar"> <!-- Lista simple de navegación -->
-            <div class="logo">MiSitio</div>
-            <ul class="nav-links"> <!-- Lista desordenada -->
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Ubicacion</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1>Es una copa de lo mejor</h1> <!-- Titiulo de la pagina -->
-    <p>Este es el bar que vas a tomar los mejores tragos, escuchar la mejor musica y tambien pasarla muy bien con tus
-        amigos</p> <!-- Parrafo -->
-    <h2>Los tragos que tenemos en la carta son</h2> <!-- Subtitulo -->
-    <div> <!-- Division de nuestra pagina -->
-        <ul> <!-- Lista desordenada -->
-            <li>Fernet <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0GSj8WKDM9rSxDo4rZ5Y73vbjIUCWRcFC_efd1T31mg&amp;s=10">
-                <ul>
-                    <li>Coca Cola</li>
-                    <li>Branca</li>
-                </ul>
-            </li>
-            <li>Vodka con jugo <img src="./img/images (4).jfif" alt="">
-                <ul>
-                    <li>Smirnoff</li>
-                    <li>Baggio de Naranja</li>
-                </ul>
-            </li>
-            <li>Daikiri de Frutilla
-                <ul>
-                    <li>Smirnoff</li>
-                    <li>Frutilla exprimida</li>
-                </ul>
-            </li>
-            <li>Caipirinha
-                <ul>
-                    <li>Cachaça</li>
-                    <li>Lima</li>
-                    <li>Azucar</li>
-                    <li>Hielo</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <section> <!-- sección temática de la web -->
+<body>
+    <h1>Registro de usuario</h1>
+    <form>
         <div>
-            <h4><b>Nosotros</b></h4>
-            <p>Somos una empresa familiar dedicada a la cocteleria</p>
+            <label for="fullname">Nombre completo</label>
+            <!-- Es una descripcion para el usuario de que se espera recibir en este campo -->
+            <input type="text" id="fullname" name="fullname" required maxlength="30" minlength="10">
+            <!-- Es la etiquera que usamos para el usuario pueda ingresar -->
+        </div>
+        <!-- type: Tipo de control de formulario  -->
+        <!--maxlenght: Longitud máxima (en número de caracteres) de value -->
+        <!-- minlegth: Longitud mínima (en número de caracteres) de value -->
+        <!-- plaseholder:Texto que aparece en el control de formulario cuando no tiene ningún valor establecido  -->
+        <!-- required: requiere un valor o que el elemento esté marcado para poder enviar el formulario  -->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" required id="email" name="email" />
         </div>
         <div>
-            <h4><b>Ubicacion</b></h4>
-            <p>Tinogasta 6088</p>
+            <label for="telefono">Numero de Telefono</label>
+            <input type="number" required id="telefono" maxlength="10">
         </div>
         <div>
-            <h4><b>Contacto</b></h4>
-            <p>1151130150</p>
+            <label for="DNI">DNI</label>
+            <input type="number" required id="DNI" maxlength="8" minlength="1">
         </div>
-    </section>
-    <a href="./fernet.html">Como hacer un fernet</a> <br>
-    <a href="https://www.youtube.com/watch?v=EMQ595IY4HE">Como hacer un fernet</a> <br>
-    <!-- Ancla que te lleva a un link de youtube -->
-    <a href="./fernet.html">Como hacer un fernet (Resumen)</a> <br> <!-- Ancla que te lleva al archivo fernet -->
-    <h3 id="sorteo">Paso a paso para participar en el sorteo</h3> <br> <!-- Ancla -->
-    <a href="#sorteo">Ir al sorteo</a> <!-- Ancla que te lleva a participar del sorteo-->
+        <div>
+            <label for="genero">Seleccione su genero</label>
+            <select name="genero" id="genero">
+                <option value="MASC">Masculino</option>
+                <option value="FEM">Femenino</option>
+                <option value="X">No binario</option>
+            </select>
+
+        </div>
+        <div>
+            <label for="pais">Seleccione su pais de origen</label>
+            <select name="pais" id="pais">
+                <option value="AR">Argentina</option>
+                <option value="BR">Brasil</option>
+                <option value="USA">Estados Unidos</option>
+                <option value="NO">No disponible</option>
+            </select>
+        </div>
+        <!--Email: campo para editar una dirección de correo electrónico. Se ve como un input de text, pero incluye parámetros de validación y muestra el teclado correspondiente en los navegadores y dispositivos compatibles con teclados dinámicos.  -->
+        <div>
+            <label for="provincia">Provincia</label>
+            <input type="text" id="provincia" name="provincia" required>
+        </div>
+        <div>
+            <label for="calle">Calle</label>
+            <input type="text" id="calle" name="calle" required>
+        </div>
+        <div>
+            <label for="domicilio">Domicilio</label>
+            <input type="number" id="domicilio" name="domicilio" minlength="1" maxlength="30000" required>
+        </div>
+        <!--Password: Campo de texto de una sola línea cuyo valor se oculta. Alerta al usuario si el sitio no es seguro. -->
+        <div>
+            <span>Seleccione su Lenguaje de programacion favorito</span>
+            <div>
+                <label for="HTML">HTML</label>
+                <input type="radio" name="lenguaje_favorito" id="HTML">
+            </div>
+            <div>
+                <label for="CSS">CSS</label>
+                <input type="radio" name="lenguaje_favorito" id="CSS">
+            </div>
+            <div>
+                <label for="JS">JS</label>
+                <input type="radio" name="lenguaje_favorito" id="JS">
+            </div>
+            <!--para que se pueda seleccionar una opcion en vez de todas las opciones, es fundamental que la clase "name" tenga el mismo valor en las 3 opciones  -->
+            <!--el input botón de radio permite seleccionar un único valor entre varias opciones con el mismo valor name  -->
+        </div>
+
+        <div>
+            <label for="comentario">Dejanos algun comentario</label>
+            <textarea name="comentario" id="comentario" rows="4" cols="100">
+        </textarea>
+
+        </div>
+
+        <button type="submit">Registrarse</button>
+    </form>
 </body>
 
 </html>
