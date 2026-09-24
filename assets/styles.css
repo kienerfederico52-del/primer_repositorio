@@ -9,3 +9,9 @@ body {
 .color-datos {
      color: rgba(247, 88, 88, 0.897);
 }
+.name {
+    padding-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+
+}
